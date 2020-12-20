@@ -1,0 +1,34 @@
+[
+    {
+        "_class" : "com.omblanco.springboot.webflux.api.mongo.app.model.entity.User",
+        "name": "John",
+        "surname": "Doe",
+        "email": "john@mail.com",
+        "birthdate": "2011-12-18T12:17:17.000+00:00",
+        "password": "$2a$10$vUE9JNc3ZflWL6u4HFH2kOEHWgNIahyAxoUoaZ1g0rsHJ3y9kzhwy"
+    },
+    {
+        "_class" : "com.omblanco.springboot.webflux.api.mongo.app.model.entity.User",
+        "name": "Oscar",
+        "surname": "Suarez",
+        "email": "oscar@mail.com",
+        "birthdate": "2011-12-18T12:17:17.000+00:00",
+        "password": "$2a$10$vUE9JNc3ZflWL6u4HFH2kOEHWgNIahyAxoUoaZ1g0rsHJ3y9kzhwy"
+    },
+    {
+        "_class" : "com.omblanco.springboot.webflux.api.mongo.app.model.entity.User",
+        "name": "Maria",
+        "surname": "Salgado",
+        "email": "salgado@mail.com",
+        "birthdate": "2011-12-18T12:17:17.000+00:00",
+        "password": "$2a$10$vUE9JNc3ZflWL6u4HFH2kOEHWgNIahyAxoUoaZ1g0rsHJ3y9kzhwy"
+    },
+    {
+        "_class" : "com.omblanco.springboot.webflux.api.mongo.app.model.entity.User",
+        "name": "Manuel",
+        "surname": "Lopez",
+        "email": "manuel@mail.com",
+        "birthdate": "2011-12-18T12:17:17.000+00:00",
+        "password": "$2a$10$vUE9JNc3ZflWL6u4HFH2kOEHWgNIahyAxoUoaZ1g0rsHJ3y9kzhwy"
+    }
+]
