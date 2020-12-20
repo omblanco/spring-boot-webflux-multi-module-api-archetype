@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>${groupId}</groupId>
+		<artifactId>${rootArtifactId}-service</artifactId>
+		<version>${version}</version>
+	</parent>
+
+	<artifactId>${artifactId}</artifactId>
+	<name>${artifactId}</name>
+
+	<dependencies>
+
+		<!-- Reactor -->
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-core</artifactId>
+		</dependency>
+		
+		<!-- Lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- Interface del modelo -->
+		<dependency>
+			<groupId>${groupId}</groupId>
+			<artifactId>${rootArtifactId}-model-interface</artifactId>
+			<version>${version}</version>
+		</dependency>
+		<!-- ./Interface del modelo -->
+
+		<!-- TODO: se usa sólo para la paginación, implementar una clase página para eliminar esta dependencia de la interface  -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-commons</artifactId>
+		</dependency>
+		
+	</dependencies>
+</project>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd" name="spring-boot-webflux-multi-module-api"
+    xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>.mvn/wrapper</directory>
+      <includes>
+        <include>**/*.java</include>
+        <include>**/*.properties</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory>.settings</directory>
+      <includes>
+        <include>**/*.prefs</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.project</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.gitignore</include>
+        <include>HELP.md</include>
+        <include>mvnw</include>
+        <include>mvnw.cmd</include>
+        <include>README.md</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <modules>
+    <module id="${rootArtifactId}-aop" dir="__rootArtifactId__-aop" name="${rootArtifactId}-aop">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.classpath</include>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.factorypath</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-model" dir="__rootArtifactId__-model" name="${rootArtifactId}-model">
+      <fileSets>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+      <modules>
+        <module id="${rootArtifactId}-model-interface" dir="__rootArtifactId__-model-interface" name="${rootArtifactId}-model-interface">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory>.settings</directory>
+              <includes>
+                <include>**/*.prefs</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.classpath</include>
+                <include>.project</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.factorypath</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="${rootArtifactId}-model-sql-impl" dir="__rootArtifactId__-model-sql-impl" name="${rootArtifactId}-model-sql-impl">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory>.settings</directory>
+              <includes>
+                <include>**/*.prefs</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.classpath</include>
+                <include>.project</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.factorypath</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="${rootArtifactId}-model-mongo-impl" dir="__rootArtifactId__-model-mongo-impl" name="${rootArtifactId}-model-mongo-impl">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory>.settings</directory>
+              <includes>
+                <include>**/*.prefs</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.classpath</include>
+                <include>.project</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.factorypath</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+      </modules>
+    </module>
+    <module id="${rootArtifactId}-service" dir="__rootArtifactId__-service" name="${rootArtifactId}-service">
+      <fileSets>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+      <modules>
+        <module id="${rootArtifactId}-service-interface" dir="__rootArtifactId__-service-interface" name="${rootArtifactId}-service-interface">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory>.settings</directory>
+              <includes>
+                <include>**/*.prefs</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.classpath</include>
+                <include>.project</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.factorypath</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+        <module id="${rootArtifactId}-service-impl" dir="__rootArtifactId__-service-impl" name="${rootArtifactId}-service-impl">
+          <fileSets>
+            <fileSet filtered="true" packaged="true" encoding="UTF-8">
+              <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory>.settings</directory>
+              <includes>
+                <include>**/*.prefs</include>
+              </includes>
+            </fileSet>
+            <fileSet filtered="true" encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.classpath</include>
+                <include>.project</include>
+              </includes>
+            </fileSet>
+            <fileSet encoding="UTF-8">
+              <directory></directory>
+              <includes>
+                <include>.factorypath</include>
+              </includes>
+            </fileSet>
+          </fileSets>
+        </module>
+      </modules>
+    </module>
+    <module id="${rootArtifactId}-client" dir="__rootArtifactId__-client" name="${rootArtifactId}-client">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.classpath</include>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.factorypath</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-security" dir="__rootArtifactId__-security" name="${rootArtifactId}-security">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.classpath</include>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.factorypath</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-web" dir="__rootArtifactId__-web" name="${rootArtifactId}-web">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.classpath</include>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.factorypath</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-app" dir="__rootArtifactId__-app" name="${rootArtifactId}-app">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.properties</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.json</include>
+            <include>**/*.sql</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/test/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.classpath</include>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.factorypath</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-mongo-app" dir="__rootArtifactId__-mongo-app" name="${rootArtifactId}-mongo-app">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.properties</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.json</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/test/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>.settings</directory>
+          <includes>
+            <include>**/*.prefs</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.classpath</include>
+            <include>.project</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory></directory>
+          <includes>
+            <include>.factorypath</include>
+            <include>.gitignore</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+  </modules>
+</archetype-descriptor>

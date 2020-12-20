@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>${groupId}</groupId>
+		<artifactId>${rootArtifactId}-service</artifactId>
+		<version>${version}</version>
+	</parent>
+
+	<artifactId>${artifactId}</artifactId>
+	<name>${artifactId}</name>
+
+	<dependencies>
+
+		<!-- Interfaz del servicio -->
+		<dependency>
+			<groupId>${groupId}</groupId>
+			<artifactId>${rootArtifactId}-service-interface</artifactId>
+			<version>${version}</version>
+		</dependency>
+		
+		<!-- aop -->
+		<dependency>
+			<groupId>${groupId}</groupId>
+			<artifactId>${rootArtifactId}-aop</artifactId>
+			<version>${version}</version>
+		</dependency>
+		<!-- ./aop -->
+		
+		<!-- Security -->
+		<dependency>
+			<groupId>${groupId}</groupId>
+			<artifactId>${rootArtifactId}-security</artifactId>
+			<version>${version}</version>
+		</dependency>
+		<!-- ./Security -->
+
+		<!-- Reactor -->
+		<dependency>
+			<groupId>io.projectreactor</groupId>
+			<artifactId>reactor-core</artifactId>
+		</dependency>
+		
+		<!-- Lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		
+		<!-- Modelmapper -->
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+		</dependency>
+		
+	</dependencies>
+</project>
